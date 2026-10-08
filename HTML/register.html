@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Page</title>
+<link rel="stylesheet" href="../CSS/style.css">
+
+<link rel="stylesheet" href="../CSS/register_style.css">
+</head>
+<body>
+<div class="register-container">
+<div class="register-image">
+<img src="../MEDIA/Logo-UVT-2017-02.png" alt="Imagine register">
+</div>
+<div class="separator"></div>
+<form class="register-form" action="home.html" method="get">
+<h1>Creează un cont nou</h1>
+
+<input type="text" name="name" placeholder="Nume complet" aria-label="Nume complet" required>
+<input type="email" name="email" placeholder="Email" aria-label="Email" required>
+<input type="tel" name="phone" placeholder="Telefon (ex: 07xx xxx xxx)" aria-label="Telefon" pattern="0[0-9]{9}">
+<input type="password" name="password" placeholder="Parola (minim 8 caractere)" aria-label="Parola" minlength="8" required>
+<input type="password" name="confirm_password" placeholder="Confirmă parola" aria-label="Confirmă parola" minlength="8" required>
+
+<label class="field-label" for="birthdate">Data nașterii</label>
+<input type="date" id="birthdate" name="birthdate" required>
+
+<fieldset class="group">
+<legend class="field-label">Gen</legend>
+<label><input type="radio" name="gender" value="male" required> Masculin</label>
+<label><input type="radio" name="gender" value="female"> Feminin</label>
+<label><input type="radio" name="gender" value="other"> Altul</label>
+</fieldset>
+
+<label class="field-label" for="country">Țara</label>
+<select id="country" name="country" required>
+<option value="" disabled selected>Alege țara</option>
+<option value="RO">România</option>
+<option value="MD">Republica Moldova</option>
+<option value="HU">Ungaria</option>
+<option value="RS">Serbia</option>
+<option value="BG">Bulgaria</option>
+<option value="other">Alta</option>
+</select>
+
+<label class="field-label" for="status">Statut</label>
+<select id="status" name="status" required>
+<option value="" disabled selected>Alege statutul</option>
+<option value="elev">Elev</option>
+<option value="student">Student</option>
+<option value="profesor">Profesor</option>
+<option value="profesionist">Profesionist IT</option>
+</select>
+
+<fieldset class="group interests">
+<legend class="field-label">Interese</legend>
+<label><input type="checkbox" name="interests" value="html-css"> HTML &amp; CSS</label>
+<label><input type="checkbox" name="interests" value="javascript"> JavaScript</label>
+<label><input type="checkbox" name="interests" value="frontend"> Framework-uri frontend</label>
+<label><input type="checkbox" name="interests" value="backend"> Backend</label>
+<label><input type="checkbox" name="interests" value="design"> Design UI/UX</label>
+<label><input type="checkbox" name="interests" value="ai"> Inteligență artificială</label>
+</fieldset>
+
+<input type="url" name="github" placeholder="Link GitHub / portofoliu (opțional)" aria-label="Link GitHub sau portofoliu">
+
+<label class="field-label" for="avatar">Poză de profil</label>
+<input type="file" id="avatar" name="avatar" accept="image/*">
+
+<textarea name="about" rows="3" placeholder="Spune-ne câteva cuvinte despre tine (opțional)" aria-label="Despre tine"></textarea>
+
+<label class="terms"><input type="checkbox" name="terms" required> Sunt de acord cu termenii și condițiile</label>
+
+<button type="submit">Register</button>
+<button type="reset" class="reset-btn">Resetează</button>
+<p class="login-text">
+Ai deja cont? <a href="../HTML/login.html">Mergi la login</a>
+</p>
+</form>
+</div>
+</body>
+</html>
