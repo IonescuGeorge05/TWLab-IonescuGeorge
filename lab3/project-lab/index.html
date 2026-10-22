@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 3</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="brand" href="index.html">Lab 3</a>
+      <ul>
+        <li><a href="bootstrap-gallery.html">Bootstrap</a></li>
+        <li><a href="takeaway.html">Gallery</a></li>
+        <li><a href="takeaway-bootstrap.html">Take-away Bootstrap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <h2>Cuprins</h2>
+      <ul>
+        <li><a href="#step1">Step 1 - Selectori</a></li>
+        <li><a href="#step2">Step 2 - Box Model</a></li>
+        <li><a href="#step3">Step 3 - Flexbox</a></li>
+        <li><a href="#step4">Step 4 - Grid</a></li>
+        <li><a href="#step5">Step 5 - Responsive</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="step1">
+        <h2>Step 1. CSS selectors and declarations</h2>
+        <p class="important">An important paragraph</p>
+        <p>Câștigă <strong>red</strong>: ambele reguli folosesc selectorul <code>.important</code>
+          (aceeași specificitate 0,1,0), deci se aplică declarația scrisă ultima.</p>
+      </section>
+
+      <section id="step2">
+        <h2>Step 2. CSS Box Model</h2>
+        <div class="card-a">Card A - content-box</div>
+        <div class="card-b">Card B - border-box</div>
+        <p>Ambele: width 200px, padding 20px, border 5px.</p>
+        <ul>
+          <li>Card A: 200 + 2·20 + 2·5 = <strong>250px</strong></li>
+          <li>Card B: <strong>200px</strong> (conținut 150px)</li>
+        </ul>
+      </section>
+
+      <section id="step3">
+        <h2>Step 3. Flexbox</h2>
+        <p>Bara de navigare de sus: brand în stânga, trei linkuri în dreapta, aliniate pe centru.</p>
+      </section>
+
+      <section id="step4">
+        <h2>Step 4. CSS Grid</h2>
+        <div class="gallery">
+          <div class="card">Card 1</div>
+          <div class="card">Card 2</div>
+          <div class="card">Card 3</div>
+          <div class="card">Card 4</div>
+          <div class="card">Card 5</div>
+          <div class="card">Card 6</div>
+        </div>
+      </section>
+
+      <section id="step5">
+        <h2>Step 5. Responsive layout</h2>
+        <p>Pagina are sidebar + main: pe ecran îngust sunt una sub alta, de la 768px sunt pe două coloane.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

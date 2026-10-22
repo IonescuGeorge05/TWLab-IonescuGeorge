@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a:focus {
+  outline: 2px solid orange;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.important {
+  color: blue;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.important {
+  color: red;
+}
+
+.card-a { box-sizing: content-box; }
+.card-b { box-sizing: border-box; }
+
+.card-a,
+.card-b {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid steelblue;
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav {
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: #333;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,
+    minmax(min(100%, 240px), 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.layout { display: grid; grid-template-columns: 1fr; }
+@media (min-width: 768px) {
+  .layout { grid-template-columns: 1fr 2fr; }
+}
+
+.layout {
+  gap: 1rem;
+  padding: 1rem;
+}
+
+aside {
+  padding: 1rem;
+  background: #f2f2f2;
+}
